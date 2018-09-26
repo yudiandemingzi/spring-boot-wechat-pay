@@ -20,7 +20,6 @@ import java.util.Map;
  */
 public class HttpUtils {
 
-
     private static  final Gson gson = new Gson();
 
     /**
@@ -109,10 +108,6 @@ public class HttpUtils {
         return null;
 
     }
-
-
-
-
 
 
 }

@@ -42,7 +42,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     @Transactional(propagation = Propagation.REQUIRED)
     public String save(VideoOrderDto videoOrderDto) throws Exception {
 
-        //1、查找视频信息
+        //1、查找商品信息（这里商品指的是视频课程）
         Video video =  videoMapper.findById(videoOrderDto.getVideoId());
 
         //2、查找用户信息
