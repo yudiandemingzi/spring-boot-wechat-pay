@@ -81,15 +81,15 @@ public class VideoOrderServiceImpl implements VideoOrderService {
 
         //4.1、生成签名 按照开发文档需要按字典排序，所以用SortedMap
         SortedMap<String,String> params = new TreeMap<>();
-        params.put("appid",weChatConfig.getAppId());
-        params.put("mch_id", weChatConfig.getMchId());
-        params.put("nonce_str", CommonUtils.generateUUID());
-        params.put("body",videoOrder.getVideoTitle());
-        params.put("out_trade_no",videoOrder.getOutTradeNo());
-        params.put("total_fee",videoOrder.getTotalFee().toString());
+        params.put("appid",weChatConfig.getAppId());         //公众账号ID
+        params.put("mch_id", weChatConfig.getMchId());       //商户号
+        params.put("nonce_str", CommonUtils.generateUUID()); //随机字符串
+        params.put("body",videoOrder.getVideoTitle());       // 商品描述
+        params.put("out_trade_no",videoOrder.getOutTradeNo());//商户订单号,商户系统内部订单号，要求32个字符内，只能是数字、大小写字母_-|* 且在同一个商户号下唯一
+        params.put("total_fee",videoOrder.getTotalFee().toString());//标价金额	分
         params.put("spbill_create_ip",videoOrder.getIp());
-        params.put("notify_url",weChatConfig.getPayCallbackUrl());
-        params.put("trade_type","NATIVE");
+        params.put("notify_url",weChatConfig.getPayCallbackUrl());  //通知地址
+        params.put("trade_type","NATIVE"); //交易类型 JSAPI 公众号支付 NATIVE 扫码支付 APP APP支付
 
         //4.2、sign签名 具体规则:https://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=4_3
         String sign = WXPayUtil.createSign(params, weChatConfig.getKey());
