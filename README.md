@@ -8,3 +8,9 @@ https://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=6_5
 
 https://www.cnblogs.com/qdhxhz/p/9708534.html
 
+https://www.cnblogs.com/qdhxhz/p/9714853.html
+
+有关用户下单成功后，微信异步回调商户接口的时候，这里用了ngrok工具类，有关ngrok相关使用如果你不了解的花可以看博客：
+
+https://www.cnblogs.com/qdhxhz/p/9678137.html
+
