@@ -13,7 +13,7 @@
 项目总体技术选型
 
 ```
-SpringBoot2.0.5 + Maven3.5.4 + Mybatis + lombok(插件) + ngrok
+SpringBoot2.1.5 + Maven3.5.4 + Mybatis + lombok(插件) + ngrok
 ```
 
 跑项目之前，先执行代码里提供的sql文件，创相关表
