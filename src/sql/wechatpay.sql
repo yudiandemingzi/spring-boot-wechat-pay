@@ -1,24 +1,3 @@
-# ************************************************************
-# Sequel Pro SQL dump
-# Version 4499
-#
-# http://www.sequelpro.com/
-# https://github.com/sequelpro/sequelpro
-#
-# Host: 119.23.28.97 (MySQL 5.7.22)
-# Database: xdclass
-# Generation Time: 2018-06-22 15:04:45 +0000
-# ************************************************************
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
 
 # Dump of table chapter
 # ------------------------------------------------------------
@@ -120,15 +99,15 @@ LOCK TABLES `video` WRITE;
 
 INSERT INTO `video` (`id`, `title`, `summary`, `cover_img`, `view_num`, `price`, `create_time`, `online`, `point`)
 VALUES
-	(1,'SpringBoot+Maven整合Websocket课程','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,1000,NULL,0,8.70),
-	(2,'2018年 6.2新版本ELK ElasticSearch ','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',43,500,NULL,0,9.70),
-	(3,'JMeter接口测试入门到实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',53,123,NULL,0,8.70),
-	(4,'Spring Boot2.x零基础入门到高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',23,199,NULL,0,6.20),
-	(5,'亿级流量处理搜索','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',64,10,NULL,0,9.10),
-	(6,'reidis消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,10,NULL,0,6.70),
-	(7,'谷歌面试题','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',52,23,NULL,0,5.10),
-	(8,'js高级前端视频','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',54,442,NULL,0,8.70),
-	(9,'List消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',13,32,NULL,0,4.30);
+	(1,'SpringBoot+Maven整合Websocket课程','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,1000,NULL,0,8.70),
+	(2,'2018年 6.2新版本ELK ElasticSearch ','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',43,500,NULL,0,9.70),
+	(3,'JMeter接口测试入门到实战','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',53,123,NULL,0,8.70),
+	(4,'Spring Boot2.x零基础入门到高级实战','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',23,199,NULL,0,6.20),
+	(5,'亿级流量处理搜索','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',64,10,NULL,0,9.10),
+	(6,'reidis消息队列高级实战','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,10,NULL,0,6.70),
+	(7,'谷歌面试题','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',52,23,NULL,0,5.10),
+	(8,'js高级前端视频','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',54,442,NULL,0,8.70),
+	(9,'List消息队列高级实战','这是概要','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',13,32,NULL,0,4.30);
 
 /*!40000 ALTER TABLE `video` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -163,10 +142,10 @@ LOCK TABLES `video_order` WRITE;
 
 INSERT INTO `video_order` (`id`, `openid`, `out_trade_no`, `state`, `create_time`, `notify_time`, `total_fee`, `nickname`, `head_img`, `video_id`, `video_title`, `video_img`, `user_id`, `ip`, `del`)
 VALUES
-	(1,'werwewfwe','dasfweqdqf',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小D','xxx',1,'SpringBoot视频','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',1,'192.154.2.32',0),
-	(2,'3452333','gasdfdf',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小X','xxx',2,'2018年 6.2新版本ELK ElasticSearch ','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',2,'192.154.2.32',0),
-	(3,'sfsd','432werew',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小C','xxx',3,'JMeter接口测试入门到实战','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',3,'192.154.2.32',0),
-	(4,'werqwe','3432',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小D','xxx',2,'2018年 6.2新版本ELK ElasticSearch ','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',1,'192.154.2.32',0);
+	(1,'werwewfwe','dasfweqdqf',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小D','xxx',1,'SpringBoot视频','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',1,'192.154.2.32',0),
+	(2,'3452333','gasdfdf',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小X','xxx',2,'2018年 6.2新版本ELK ElasticSearch ','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',2,'192.154.2.32',0),
+	(3,'sfsd','432werew',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小C','xxx',3,'JMeter接口测试入门到实战','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',3,'192.154.2.32',0),
+	(4,'werqwe','3432',1,'2018-07-12 00:00:00','2018-07-12 00:00:00',12,'小D','xxx',2,'2018年 6.2新版本ELK ElasticSearch ','https://oujiong-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',1,'192.154.2.32',0);
 
 /*!40000 ALTER TABLE `video_order` ENABLE KEYS */;
 UNLOCK TABLES;
